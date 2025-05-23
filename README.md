@@ -1,6 +1,6 @@
 # 🚀 Scalable Web Application on AWS with Load Balancer and Auto Scaling
 
-This project uses Terraform to deploy a fully scalable, fault-tolerant web application on AWS. It demonstrates key cloud architecture concepts including Infrastructure as Code (IaC), auto healing, and high availability.
+This project uses Terraform to deploy a fully scalable, fault tolerant web application on AWS. It demonstrates key cloud architecture concepts including Infrastructure as Code (IaC), auto healing and high availability.
 
 ---
 
@@ -21,7 +21,7 @@ This project uses Terraform to deploy a fully scalable, fault-tolerant web appli
 ## ✅ What It Does
 
 - Provisions a Launch Template with EC2 + Nginx installed
-- Creates an Auto Scaling Group with 2–4 EC2 instances
+- Creates an Auto Scaling Group with 2 to 4 EC2 instances
 - Sets up an Application Load Balancer with target group and health checks
 - Uses default VPC and subnets for quick deployment
 - Automatically bootstraps web servers with a custom landing page
@@ -48,7 +48,7 @@ http://web-alb-1656039146.us-east-1.elb.amazonaws.com/
 
 You should see:
 
-<h1>Welcome to your updated scalable web app!</h1>
+<h1>Welcome to your updated scalable web app!keep building! </h1>
 
 ---
 
