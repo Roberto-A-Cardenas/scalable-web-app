@@ -1,10 +1,10 @@
-# 🚀 Scalable Web Application on AWS with Load Balancer and Auto Scaling
+# Scalable Web Application on AWS with Load Balancer and Auto Scaling
 
-This project uses Terraform to deploy a fully scalable, fault tolerant web application on AWS. It demonstrates key cloud architecture concepts including Infrastructure as Code (IaC), auto healing and high availability.
+This project uses Terraform to deploy a fully scalable, fault-tolerant web application on AWS. It demonstrates key cloud architecture concepts including Infrastructure as Code (IaC), auto-healing, and high availability.
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - Terraform – Infrastructure as Code
 - AWS EC2 – Virtual servers for web hosting
@@ -18,7 +18,7 @@ This project uses Terraform to deploy a fully scalable, fault tolerant web appli
 
 ---
 
-## ✅ What It Does
+## What It Does
 
 - Provisions a Launch Template with EC2 + Nginx installed
 - Creates an Auto Scaling Group with 2 to 4 EC2 instances
@@ -28,57 +28,48 @@ This project uses Terraform to deploy a fully scalable, fault tolerant web appli
 
 ---
 
-## 📂 File Structure
+## File Structure
 
+```
 scalable-web-app/
-├── main.tf             # Infrastructure definition  
-├── variables.tf        # Input variables  
-├── terraform.tfvars    # Variable values  
-├── outputs.tf          # Useful output values  
-├── user_data.sh        # EC2 startup script (Nginx setup)  
-└── README.md           # Project documentation
+├── main.tf              # Infrastructure definition
+├── variables.tf         # Input variables
+├── terraform.tfvars     # Variable values
+├── outputs.tf           # Useful output values
+├── user_data.sh         # EC2 startup script (Nginx setup)
+└── README.md            # Project documentation
+```
 
 ---
 
-## 🖥️ Access the Web App
-
-After applying the infrastructure, visit the Load Balancer URL:
-
-http://web-alb-1656039146.us-east-1.elb.amazonaws.com/
-
-You should see:
-
-<h1>Welcome to your updated scalable web app!keep building! </h1>
-
----
-
-## 🧪 How to Deploy
+## How to Deploy
 
 ### Prerequisites
-- Terraform installed  
-- AWS CLI configured  
+- Terraform installed
+- AWS CLI configured
 - EC2 Key Pair (.pem file)
 
 ### Steps
-terraform init  
-terraform plan  
+
+```bash
+terraform init
+terraform plan
 terraform apply
+```
+
+After deployment, visit the ALB DNS name from Terraform outputs to access the web app.
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
-- Add CloudWatch alarms for monitoring  
-- Add HTTPS via ACM + ALB Listener  
-- Deploy from GitHub using CodeDeploy  
+- Add CloudWatch alarms for monitoring
+- Add HTTPS via ACM + ALB Listener
+- Deploy from GitHub using CodeDeploy
 - Replace default VPC with custom VPC
 
 ---
 
-## ✅ Next: Push to GitHub
+## License
 
-git add README.md  
-git commit -m "Add final polished README"  
-git push
-
-
+MIT License
